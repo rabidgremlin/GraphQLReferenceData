@@ -5,7 +5,7 @@ RUN apt-get update
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 RUN apt-get -y install postgresql postgresql-contrib nodejs npm
 
-RUN npm install -g postgraphile 
+RUN npm install -g postgraphile @graphile-contrib/pg-simplify-inflector
 
 COPY countries.csv /tmp/countries.csv
 COPY setupdatabase.sql /tmp/setupdatabase.sql

@@ -6,8 +6,8 @@ GRANT ALL PRIVILEGES ON DATABASE graphqlref TO graphqlref;
 
 CREATE TABLE countries (
     id int PRIMARY KEY,
-    countryCode varchar(2) NOT NULL,
-    name varchar(100) NOT NUll
+    countryCode varchar(2) NOT NULL UNIQUE,
+    name varchar(100) NOT NUll UNIQUE
 );
 
 GRANT ALL PRIVILEGES ON TABLE countries TO graphqlref;
