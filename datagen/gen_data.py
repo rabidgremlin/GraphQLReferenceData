@@ -1,3 +1,4 @@
+"""Not too terrible script to create some sample data for the demo."""
 import pandas as pd
 
 print("Loading countries.dat....")
